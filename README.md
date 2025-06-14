@@ -26,7 +26,19 @@ QBE ile dinamik ve esnek sorgular oluşturulabilir; kullanıcılar örnek (examp
 
 - Ürün kaydetme (saveProduct)
 
-- Örnek nesne kullanarak ürün arama (findProductExample)
+- Kategori kullanarak ürün arama (findProductExample)
+- ![Ekran görüntüsü 2025-06-14 024632](https://github.com/user-attachments/assets/8a8de3bd-af8f-427b-88d7-f61edfccfe7b)
+
+![Ekran görüntüsü 2025-06-14 024602](https://github.com/user-attachments/assets/954c1475-ca8f-4324-881a-9dfb33998536)
 
 - Özel eşleme kuralları ile ürün arama (findProductWith)
+- 
+
+
+![Ekran görüntüsü 2025-06-14 231553](https://github.com/user-attachments/assets/98d2babd-1629-4ea9-9ff6-5d505a6211ed)
+
+
+
+
+
 
