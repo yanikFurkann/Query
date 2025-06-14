@@ -26,22 +26,17 @@ public class ProductService {
 	@Autowired
 	ProductRepository productRepository;
 	
-	
-	
-	
 	public Product saveProduct(Product product) {
 	
-		return	productRepository.save(product);
+	return	productRepository.save(product);
 	}
 	
-	public List<Product> findProductExample(Product product){
+	public List<Product> findProductExample(Product product){	
+	Example<Product> example=Example.of(product);
 		
-		Example<Product> example=Example.of(product);
-		
-		return productRepository.findAll(example);
+	return productRepository.findAll(example);
 		
 	}
-	
 	
 	public List<Product> findProductWith(String category , String brand){
 	Product product= Product.builder()
@@ -49,7 +44,6 @@ public class ProductService {
 			.brand(brand)
 			.build();
 
-	
 	 ExampleMatcher matcher =matching()
              .withIgnoreCase()                          
              .withStringMatcher(StringMatcher.CONTAINING)
@@ -57,9 +51,9 @@ public class ProductService {
              .withMatcher("category", match -> match.exact()) 
              .withMatcher("brand", match -> match.contains());
 
-			Example<Product> example=Example.of(product, matcher);
+	Example<Product> example=Example.of(product, matcher);
 			
-			return productRepository.findAll(example);
+	return productRepository.findAll(example);
 		
 	}
 
